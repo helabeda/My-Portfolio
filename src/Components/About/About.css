@@ -1,0 +1,100 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 10%;
+}
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px gray;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin-top: 20%;
+}
+.profile-picture-background{
+    height: 92%;
+    width: 92%;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url('../../assets/hela.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-picture-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+.know{
+    color: #6d6875;
+}
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.about_card{
+    background: #ffcfd2;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 400ms ease;
+}
+.about_card:hover{
+    background: transparent;
+    border-color: #ffcfd2;
+    cursor: default;
+}
+.about_icon{
+    color: black;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.about_card h5{
+    font-size: 0.95rem;
+    color: #a3c4f3;
+}
+.about_card small{
+    font-size: 0.7rem;
+    color: black;
+}
+.about_content p{
+    margin: 2rem 0 2.6rem;
+    color: black;
+}
+/*================== MEDIA QUERIES (MEDIUM DIVICES) ===============*/
+@media screen and (max-width: 1024px){
+   .about_container{
+       grid-template-columns: 1fr;
+       gap: 0;
+   }
+   .profile-picture{
+       width: 190px;
+       height: 190px;
+       margin: 2rem auto 4rem;
+   }
+   .about_content p{
+       margin: 1rem 0 1.5rem;
+   }
+  }
+  /*================== MEDIA QUERIES (SMALL DIVICES) ===============*/
+  @media screen and (max-width: 600px){
+    .profile-picture{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 3rem;
+    }
+    .about_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about_content{
+        text-align: center;
+    }
+    .about_content p{
+        margin: 1.5rem 0;
+
+    }
+  }

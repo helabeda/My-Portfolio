@@ -1,0 +1,94 @@
+footer{
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+    border: 1px solid #ffcfd2;
+}
+footer:hover{
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background: #e55d87;
+	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+}
+.footer_logo{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+    color: transparent;
+    background: conic-gradient(
+      #D9D7F1 12%, 
+      #BAABDA 12%, #BAABDA 33%, 
+      #E7FBBE 33%, #E7FBBE 55%, 
+      #FFCBCB 55%, #FFCBCB 70%, 
+      #B5DEFF 70%, #B5DEFF 87%, 
+      #F7D1BA 87%);
+    background-size: 50%;
+    background-clip: text;  
+    -webkit-background-clip: text;
+    animation: expand-rev 0.5s ease forwards;
+}
+.footer_logo:hover{
+    color: white;
+}
+.permalinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem;
+    margin: 0 auto 3rem;
+    color: #0a9396;
+}
+.permalinks li a:hover{
+    color: white;
+}
+.footer_socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.footer_socials a{
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    font-size: 25px;
+    color: #6c757d;
+    border: 1px solid transparent;
+}
+
+.linkedin:hover{
+    color: #4895ef;
+    border-color: #0a9396;
+}
+.github:hover{
+    color: #001219;
+    border-color: #0a9396;
+}
+.footer_copyright{
+    margin-bottom: 5rem;
+
+}
+.footer_icon{
+    color: #d00000;
+}
+
+/*================== MEDIA QUERIES (SMALL DIVICES) ===============*/
+@media screen and (max-width: 600px){
+    .permalinks{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer_socials{
+        margin-bottom: 2.6rem;
+    }
+}
