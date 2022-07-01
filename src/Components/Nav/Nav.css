@@ -33,9 +33,4 @@ nav a.active{
     background: #90e0ef;
     color: white;
 }
-@media screen and (max-width: 480px) {
-    nav {
-      display: none;
-    }
-  }
   
